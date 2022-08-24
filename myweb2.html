@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>google imagenes</title>
+    <style>
+        div{
+            text-align: right;
+        }
+
+       h1{
+        text-align: center;
+       }
+       .container{
+            height: 120px;
+            
+         }
+
+         .data, tr td{
+            
+            border: transparent
+            border-collapse: collapse;
+            padding: 30px;          
+            background-color: aquamarine;
+         }
+         td{
+            text-align: left;
+           }
+  </style>
+        
+</head>
+<body>
+    <div>
+        <button type="submit" id="index"><a href="index.html">Google</a></button>
+    </div>   
+    <h1>
+        <img src="lupa.jpg" alt="lupa" width="300">
+    </h1>
+    <div class="container">
+        <table align="left" class="data">
+            <tr>
+                <td>Find pages with</td>
+                <td>
+                    <form action="https://www.google.com/search">
+                        <input type="text" name="as_q" id="as_q">
+                    </form>
+                </td>
+                 <td>"all these words:" </td>
+            </tr>
+
+            <tr>
+                <td>Find pages with</td>
+                <td>
+                    <form action="https://www.google.com/search">
+                        <input type="text" name="as_epq" id="as_q">
+                    </form>
+                </td>
+                <td>"this exact words or phrase:" </td>
+            </tr>
+
+            <tr>
+                <td>Find pages with</td>
+                <td>
+                    <form action="https://www.google.com/search">
+                        <input type="text" name="as_oq" id="as_oq">
+                    </form>
+                </td>
+                <td>"any of these words:" </td>
+            </tr>
+
+            <tr>
+                <td>Find pages with</td>
+                <td>
+                    <form action="https://www.google.com/search">
+                        <input type="text" name="as_eq" id="as_eq">
+                    </form>
+                </td>
+                <td >"None of this words:" </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <form action="https://www.google.com/search" method="get">
+                        <input type="submit" value="Search advance" name="as_eq,as_oq,as_q">
+                    </form>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
